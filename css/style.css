@@ -249,7 +249,7 @@ background-color: rgb(255, 255, 255);
   
     cursor: pointer;
     margin-top: 50px;
-    padding: 20px 40px;
+    padding: 15px 25px;
     border-radius: 5px;
     background-color: var(--main-color);
     transition: var(--main-transition);
