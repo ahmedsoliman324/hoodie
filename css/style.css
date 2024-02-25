@@ -249,7 +249,7 @@ background-color: rgb(255, 255, 255);
   
     cursor: pointer;
     margin-top: 50px;
-    padding: 15px 25px;
+    padding: 20px 40px;
     border-radius: 5px;
     background-color: var(--main-color);
     transition: var(--main-transition);
@@ -300,7 +300,7 @@ background-color: rgb(255, 255, 255);
 }
 @media (max-width:992px) {
     .home .container {
-        flex-direction: column-reverse;
+        flex-direction: row-reverse;
     }
     .home .container {
         flex-grow: 1;
@@ -315,9 +315,9 @@ background-color: rgb(255, 255, 255);
         gap: 20px;
         text-align: center;
     }
-    .home .container .image img {
-        display: none;
-    }
+    /* .home .container .image img {
+        display: ;
+    } */
     .home .container .info button {
         padding: 20px;
         margin-bottom: 10px;
@@ -325,12 +325,24 @@ background-color: rgb(255, 255, 255);
         margin: 20px auto;
         text-align: center;
     }
-
+    .home .container {
+        justify-content: center;
+        gap: 20px;
+    }
     }
     @media (max-width:1380px) {
         .home .container .image .second{
             display: none;
         }
+        .home .container .image img {
+            max-width:230px;
+        }
+        .home .container .info h3 {
+            font-size: 25px;
+    }
+    .home .container .social-links {
+margin-left: 25px;
+    }
     }
    
 /* :end-home*/
@@ -579,6 +591,11 @@ background-color: rgba(255, 192, 203, 0.342);
     .men .container {
         padding: 0px 10px;
        }
+       .men .container {
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+        gap: 15px;
+    }
+
 }
 
 
@@ -773,9 +790,10 @@ margin-left: 5px;
  /* end footer */
 
 /* labtob screen responsive */
+
 @media (max-width:1380px) {
     .bar-two .container ul {
-        gap: 30px;
+        gap: 20px;
         padding-left: 0;
 }
 .bar-two .container ul li a {
@@ -836,5 +854,16 @@ margin-left: 5px;
     box-shadow: rgba(0, 0, 0, 0.383) 0p
 }
    
+
+}
+
+@media (max-width:700px){
+    .men .container {
+        padding: 0px 10px;
+       }
+       .men .container {
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+        gap: 15px;
+    }
 
 }
